@@ -4,7 +4,7 @@ var current=new Date();
 var inputText=document.getElementById('inputText');
 var currentDate=current.getFullYear() + '-'+ (current.getMonth()+1<10? '0'+(current.getMonth()+1):current.getMonth()+1)+'-'+current.getDate()+'   '+current.getHours()+':'+current.getMinutes()+':'+current.getSeconds();
 var sendBtn=document.getElementById('sendBtn');
-// var showContent=document.getElementById('showContent');
+
 function getValue(){
     if(event.key==="Enter"){
         initData.push({
@@ -64,17 +64,15 @@ function send(){
 }
 
 sendBtn.onclick=send;
-
-
-// function deleteEle(id){
-//     var data=initData.slice();
-//     var removeItem=initData.splice(id,1);
-//     removeItem.className="delete";
-//     var date=document.getElementById('date');
-//     date.innerHTML=`<div class="date" id="date">${data[id].date}</div>`
-//     renderList();
-// }
-
+function del(id){
+    
+            var removeItem=initData.splice(initData.id,1);
+            removeItem.className="delete";
+            console.log(initData);
+            // item.innerHTML=`<div class="delete">${val.date}消息撤回</div>`
+            renderList();
+  
+}
 function renderList(){
     var date=document.getElementById('date');
     var content=document.getElementById('content');
@@ -88,17 +86,29 @@ function renderList(){
         item.innerHTML=`<div class="date" id="date">${val.date}</div>
         <div class="showContent" id="showContent">
             <div class="headImage">丽娜</div>
-            <div class="content" id="content"><p>${val.text}</p></div>
+            <div class="content" id="content"><p>${val.text}</p></div> 
+            <input type="button" class="back" value="撤回" onclick="del(${val.id})" /> 
         </div>`
         eleList.append(item);
-         var data=initData.slice();
-        item.onclick=function(){
-            var removeItem=initData.splice(val.id,1);
-            removeItem.className="delete";
-            item.innerHTML=`<div class="delete">${val.date}消息撤回</div>`
-        }
+        // var back=document.createElement('input');
+        // back.type="button"
+        // back.value="撤回";
+        // back.className="back";
+        // var showContent=document.getElementById('showContent');
+        // showContent.append(back);
 
-        // item.innerHTML="撤销"+val.date;
+        // item.append(back);
+        //  var data=initData.slice();
+    //     window.onload = function () {      
+    // }
+
+        // back.onclick=function(){
+        //     var removeItem=initData.splice(val.id,1);
+        //     removeItem.className="delete";
+        //     item.innerHTML=`<div class="delete">${val.date}消息撤回</div>`
+        // }
+     
+       
 
 
     })
