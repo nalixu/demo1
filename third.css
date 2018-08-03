@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 641px;
+    height: 590px;
+    background: rgba(245,246,247,0.3);
+    border: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.show{
+    width: 100%;
+    height: 403px;
+    display: flex;
+    flex-direction:column;
+    border: none;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.nameInfo{
+    width: 100%;
+    height:58px;
+    border:0;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.nameLeft{
+    width: 443px;
+    height: 53px;
+    float: left;
+}
+.nameLeft .headImage{
+    width: 36px;
+    height: 36px;
+    background: rgb(50,150,250);
+    border: none;
+    border-radius: 50%;
+    float: left;
+    margin: 9px 2px 2px 16px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+.nickname{
+    height: 26px;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    margin: 3px 0 0 63px;
+    width: 100px;
+    
+    
+}
+.note{
+    width:300px;
+    font-size:13px;
+    font-family: 'Microsoft Yahei';
+    color:#333;
+    margin-left: 60px;
+}
+/* 显示部分样式 */
+.date{
+    width: 100%;
+    height:41px;
+    font-size:13px;
+    line-height:54px;
+    text-align:center;
+    color:#a7a7a7;
+}
+.showContent{
+    width: 100%;
+    height: 50px;
+    margin-top:-2px;
+}
+.showContent .headImage{
+    width: 36px;
+    height: 36px;
+    background: rgb(50,150,250);
+    border: none;
+    border-radius: 50%;
+    float: left;
+    margin: 9px 2px 2px 16px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+.content{
+    width: auto;
+    height:auto;
+    margin-top: 7px;
+    margin-left: 8px;
+    float: left;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius:3px;
+    color: #333;
+    font-size:16px;
+}
+.content p{
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding:9px;
+}
+/* 输入部分样式 */
+.write{
+    width:100%;
+    height:183px;
+    border:none;
+    display: flex;
+    flex-direction:column;
+}
+.icon{
+    width:100%;
+    height:31px;
+    border: none;
+}
+.writeContent{
+    width: 100%;
+    height: 150px;
+    margin-top:8px;
+}
+.inputText{
+    width: 95%;
+    height: 98px;
+    border: none;
+    background:rgba(245,246,247,0.3);
+    resize: none;
+    outline: none;
+    padding: 8px;
+    font-size:16px;
+}
+.btn{
+    width: 100%;
+    height: 36px;
+    border: none;
+}
+.sendBtn{
+    width: 62px;
+    height:33px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius:3px;
+    margin-right: 8px;
+    float: right;
+}
+.afterSendbtn{
+    width: 62px;
+    height:33px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius:3px;
+    margin-right: 8px;
+    float: right;
+    color: #fff;
+    background: rgb(50,150,250);
+}
+#list{
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+.itemStyle{
+    margin-top:1rem;
+}
+.delete{
+    width: 100%;
+    height:41px;
+    font-size:13px;
+    line-height:54px;
+    text-align:center;
+    color:#a7a7a7;
+}
