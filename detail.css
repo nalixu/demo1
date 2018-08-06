@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ul,li{
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 989px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.textContainer{
+    width: 946px;
+   /* height: auto;
+    background: rgba(238, 238, 238, 1); */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.icon{
+    width: 100%;
+    height: 42px;
+}
+.returnBtn{
+    float: right;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background:rgb(27, 143, 221);
+}
+.textEdit{
+    width: 90%;
+    height: 497px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.textEdit input{
+    width: 88%;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    padding: 0.6rem 0 0.3rem 1rem;
+    outline: none;
+}
+hr{
+    width: 98%;
+    margin: 0 auto;
+}
+.textEdit textarea{
+    width: 94%;
+    height: 400px;
+    font-size: 16px;
+    border: none;
+    padding: 1rem;
+    outline:none;
+    resize: none;
+}
+/* .formBtn{
+    width:90%;
+    margin:auto;
+} */
