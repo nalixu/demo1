@@ -13,7 +13,7 @@ function getValue1() {
     }
 
     initData.push(record);
-    // localStorage.data=JSON.stringify(initData);
+  
 }
 
 function getQueryString(name) {
@@ -43,7 +43,7 @@ function jump() {
     var title = title.value;
     var content=content.value;
     var createTime =currentDate;  
-    initData[id]={title,content,createTime};
+    initData[id]={title,content,createTime};//数组下标例如initData[0]是一个对象赋值
     localStorage.data  = JSON.stringify(initData);
     window.open("index.html");
 }
@@ -64,12 +64,3 @@ render(initData[id])
 
 // todo: editor artical
 
-// function editor (article){
-//     var current=new Date();
-//     var currentDate=current.getFullYear()+'-'+(current.getMonth()+1<10? '0'+(current.getMonth()+1):current.getMonth()+1)+'-'+current.getDate();
-//     let title = title.value;
-//     let content=content.value;
-//     let createTime =currentDate;
-//         data[id]=  {title,content,createTime}
-//         localStorage.data  = JSON.stringify(data)
-// }

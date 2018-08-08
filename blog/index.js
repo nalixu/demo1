@@ -1,27 +1,6 @@
 var data = localStorage.data ? JSON.parse(localStorage.data) : [];
-// function openPage(){
-//     window.open("detail.html");
-// }
-// function getQueryString(name){
-//   var str=location.search.substring(1);
-//   var arr=str.split("&");
-//   var obj={}
-//   for(var i=0;i<arr.length;i++){
-//       var key=arr[i].split("=")[0];
-//       var val=arr[i].split("=")[1]
-//       obj[key]=val;
-//   }
-//   if(name){
-//       return obj[name]
-//   } else{
-//       return obj;
-//   }
-// }
-// let id = getQueryString('id');
-
 function render() {
   var content = document.getElementById('content');
-
   // data.forEach((val, key) => {
   //   var article = document.createElement('div')
   //   article.innerHTML = `<div class="article">
@@ -60,3 +39,5 @@ function render() {
 
 }
 render();
+//this is a list page,first init data about localStorage,then render use for/map/forEach to append item
+//ps:if create div to push item,the div should be created in loop(for/map/forEach)

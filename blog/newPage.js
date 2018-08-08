@@ -19,3 +19,7 @@ function jump(){
     window.open("index.html");
 }
 submit.onclick=jump
+//todo:new obj then push array,before save in localStorage change array to JSON
+//init array if have data then parse json and save data to localStorage
+
+

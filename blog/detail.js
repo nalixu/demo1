@@ -16,11 +16,6 @@ function getQueryString(name){
     }
 }
 let id = getQueryString('id')
-// var edit=document.getElementById('edit');
-// function jump(){
-//     window.open("editPage.html?id="+id);
-// }
-// edit.onclick=jump;
 
 function render(article,key){
     var article1=document.getElementById('article');
@@ -39,21 +34,6 @@ function render(article,key){
 
 }
 render(data[id])
-// function render(){
-//     var article=document.getElementById('article');
-//     var edit=document.getElementById('edit');
-//     article.innerHTML=`
-//     <div class="article-head">
-//     <div class="date">${data.createTime}</div>
-//     <div class="article-title">${data.title}</div>
-// </div>
-// <div class="article-content">
-//     <p>
-//     ${data.content}
-//     </p>
-// </div> `
-// edit.onclick=function(){
-//     window.open("editPage.html");
-//     }
-// }
-// render()
+//detail page is about to list page's id
+//first:new function getQueryString to get url's id
+//then render's parameter is the id you get
