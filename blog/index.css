@@ -81,7 +81,7 @@ body{
 }
 .content{
     width: 912px;
-    height: 2332px;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -123,12 +123,25 @@ body{
     font-family: "Open sans", Helvetica, Arial, sans-serif;
     color: #666666;
     text-align: center;
+    /* position: relative; */
 }
 .article-content p{
     width:80%;
+    height: 150px;
     margin: auto;
     line-height: 1.6em;
     font-size: 1.0rem;
+    overflow:hidden;
+    position: relative;
+}
+.article-content ::after{
+    content: "...";
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* padding: 0 20px 1px 45px; */
+
 }
 .more-link{
     display: block;

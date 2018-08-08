@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>blog</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>newPage</title>
+    <link rel="stylesheet" href="./newPage.css">
 </head>
 <body>
     <div class="header">
@@ -29,14 +29,20 @@
             </div>
         </div>
     </div>
-    <div class="main">
-        <div class="container">
-            <div class="content" id="content">
-               
+    <div class="container">
+        <div class="textContainer">
+            <div class="icon"></div>
+            <div class="textEdit" id="textEdit">
+                <input id="title" type="text" placeholder="在这里编辑标题" />
+                <hr>
+                <textarea id="content" name="edit" id="edit" placeholder="在这里编辑内容"></textarea>
             </div>
-            <div class="page"></div>
+            <div class="formBtn">
+                <input type="button" class="submit" id="submit" value="发表日志" />
+                <input type="button" class="resite" id="resite" value="取消" />
+            </div>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./newPage.js"></script>
 </body>
 </html>

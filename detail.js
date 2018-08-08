@@ -57,3 +57,22 @@ render(data[id])
 // if(n%2==0&&n!==0){if(n==2) return 2;else return n*f(n-2) } ;
 // if(n%2!==0){if(n==1) return 1;else return n+f(n-2)}
 // }
+
+
+// todo: get id by query string 
+// let id = location.search.substring(1)
+
+// todo: get initData
+// let data = localStorage.data || []
+
+// todo: get detail from initData by id
+// let deatail  = data[id]
+
+// todo: render html
+// render(deatail)
+
+
+// todo: set value by detail 
+// todo:1 set title
+
+// toto: 2 set content 
