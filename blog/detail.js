@@ -33,7 +33,7 @@ function render(article,key){
 </div> `
 
 }
-render(data[id])
+render(data[id],id);
 //detail page is about to list page's id
 //first:new function getQueryString to get url's id
 //then render's parameter is the id you get
