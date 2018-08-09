@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>editPage</title>
+    <link rel="stylesheet" href="./editPage.css">
+</head>
+<body>
+    <div class="header">
+        <div class="head">
+            <div class="logo">
+                <img class="img-circle" src="./img/guy.jpg" alt="head-img">
+                <span class="head-title">Author Nalixu</span>
+                <span class="tagline">
+                    A creative man is motivated by the desire to achieve, not by the desire to beat others.
+                </span>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="navbar">
+                <ul>
+                    <li class="nav-li"><a href="./index.html"> 首页</a></li>
+                    <li class="nav-li">关于</li>
+                    <li class="nav-li">更多</li>
+                    <li class="nav-li"><a href="./index.html">博客</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="textContainer">
+            <div class="icon"></div>
+            <div class="textEdit" id="textEdit">
+                <input id="title" type="text" placeholder="在这里编辑标题" />
+                <hr>
+                <textarea id="content" name="edit" id="edit" placeholder="在这里编辑内容"></textarea>
+            </div>
+            <div class="formBtn">
+               <a href=""> <input type="button" class="submit" id="submit" value="发表日志" /></a>
+                <input type="button" class="resite" id="resite" value="取消" />
+            </div>
+        </div>
+    </div>
+    <script src="./editPage.js"></script>
+</body>
+</html>

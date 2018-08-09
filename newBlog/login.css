@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style-type: none;
+}
+body{
+    background-color:#86B4CC;
+    font-size:1.2rem;
+    color:#787878;
+    font-weight: 500;
+    font-family: 'Open Sans',sans-serif;
+    display: flex;
+}
+.main{
+    width: 30%;
+    margin: 14rem auto 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    width:100%;
+    position: relative;
+}
+.user img{
+    position: absolute;
+    right: 1.7rem;
+    top: 0;
+    padding: 0 4px 0 0;
+}
+.login{
+    padding: 2rem 0;
+    margin-top: 0.5rem;
+}
+.inset{
+    background: #fff;
+    border-radius: 5px;
+    padding: 3rem 3rem;
+    position: relative;
+}
+.inset::before{
+    left: 89%;
+    top: -5.3%;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid #fff;
+    border-top: 0 solid rgba(0, 0, 0, 0)!important;
+    border-right: 13px solid rgba(0,0,0,0) !important;
+    border-left: 13px solid rgba(0,0,0,0) !important;
+    position: absolute;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    display: flex;
+    flex-direction: column;
+}
+span label{
+    line-height: 26px;
+    margin-bottom: 0.7rem;
+}
+span input{
+    text-align: start;
+    font: 400 13.3333px Arial;
+    line-height: 32px;
+    margin-bottom: 0.6rem;
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    line-height: 40px;
+}
+.submit input{
+    width: 85px;
+    height: 35px;
+    background: rgb(240,107,55);
+    color: #fff;
+    border: 0;
+    border-radius: 40px;
+    font-weight: 500;
+}
+.forget-pass{
+    margin-left: 14rem;
+    font-size: 1rem;
+}
+.forget-pass a{
+    color:#787878;
+    font-weight: 500;
+    text-decoration: none;
+}
