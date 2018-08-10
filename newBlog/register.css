@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin: 0;
     padding:0;
 }
 ul,li{
@@ -14,7 +14,7 @@ body{
     display: flex;
 }
 .main{
-    width: 26%;
+    width:26%;
     margin: 14rem auto 2rem;
     display: flex;
     flex-direction: column;
@@ -23,13 +23,13 @@ body{
     width:100%;
     position: relative;
 }
-.user img{
-    position: absolute;
-    right: 1.7rem;
-    top: 0;
-    padding: 0 4px 0 0;
+.user p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
 }
-.login{
+.regist{
     padding: 2rem 0;
     margin-top: 0.5rem;
 }
@@ -39,18 +39,7 @@ body{
     padding: 3rem 3rem;
     position: relative;
 }
-.inset::before{
-    left: 89%;
-    top: -5.3%;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 20px solid #fff;
-    border-top: 0 solid rgba(0, 0, 0, 0)!important;
-    border-right: 13px solid rgba(0,0,0,0) !important;
-    border-left: 13px solid rgba(0,0,0,0) !important;
-    position: absolute;
-}
+
 form{
     display: flex;
     flex-direction: column;
@@ -77,8 +66,9 @@ span input{
     justify-content:space-between;
 }
 .submit{
-    width: 178px;
+    width: 100px;
     height: 35px;
+    margin: 0 auto;
 }
 .submit input{
     width: 85px;
@@ -90,12 +80,6 @@ span input{
     font-weight: 500;
 
 }
-.forget-pass{
-    /* margin-left: 14rem; */
+.password{
     font-size: 1rem;
-}
-.forget-pass a{
-    color:#787878;
-    font-weight: 500;
-    text-decoration: none;
 }
