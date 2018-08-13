@@ -21,10 +21,11 @@
         <div class="nav">
             <div class="navbar">
                 <ul>
-                    <li class="nav-li">首页</li>
-                    <li class="nav-li">关于</li>
-                    <li class="nav-li">更多</li>
-                    <li class="nav-li">博客</li>
+                        <li class="nav-li"><a href="./index.html"> 首页</a></li>
+                        <li class="nav-li">关于</li>
+                        <li class="nav-li">更多</li>
+                        <li class="nav-li"><a href="./newPage.html">博客</a></li>
+                        <li class="nav-li">种类</li>
                 </ul>
             </div>
         </div>
@@ -37,6 +38,19 @@
                 <hr>
                 <textarea id="content" name="edit" id="edit" placeholder="在这里编辑内容"></textarea>
             </div>
+            <div class="selectbtn">
+                <label for="myselect">种类:</label>
+                <select name="" id="myselect" class="myselect">
+                    <option value="life">生活</option>
+                    <option value="health">健康</option>
+                    <option value="study">学习</option>
+                </select>
+                <input type="text" value="" name="mytext" id="mytext" class="mytext" />
+                <button value="add" id="addbtn" name="addbtn" class="addbtn">add</button>
+                <!-- <button value="edit" id="editbtn" name="editbtn" class="editbtn">edit</button>
+                <button value="delete" id="deletebtn" name="deletebtn" class="deletebtn">delete</button> -->
+            </div>
+           
             <div class="formBtn">
                 <input type="button" class="submit" id="submit" value="发表日志" />
                 <input type="button" class="resite" id="resite" value="取消" />

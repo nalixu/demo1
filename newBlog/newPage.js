@@ -10,7 +10,8 @@ var createTime=current.getFullYear()+'-'+(current.getMonth+1<10?'0'+(current.get
     var record={
         title:title.value,
         content:content.value,
-        createTime:createTime
+        createTime:createTime,
+        style:myselect.options[myselect.selectedIndex].text
     }
     initData.push(record);
 }
@@ -41,3 +42,45 @@ if(document.readyState==="loading"){
 }else{
     checkSomething();
 }
+// select
+//todo:add style
+var initSelect=localStorage.selectData?JSON.parse(localStorage.selectData):[];
+var myselect=document.getElementById('myselect');
+var addbtn=document.getElementById('addbtn');
+function getSelectValue(){
+    var mytext=document.getElementById('mytext');
+    initSelect.push({id:initSelect.length,name:mytext.value,label:mytext.value})
+    localStorage.selectData=JSON.stringify(initSelect);
+    mytext.value=''
+}
+
+//to:read
+function readData(){
+    getSelectValue()
+   
+    for(var i;i<initSelect.length;i++){
+        var objOption=document.createElement('option');
+        objOption.text=initSelect[i].label;
+        objOption.value=initSelect[i].name;
+        myselect.options.add(objOption);
+    }
+}
+
+//to:render
+function renderOption(){
+    readData();
+   
+    initSelect.forEach(val => {
+        var objOption=document.createElement('option');
+        objOption.innerHTML=`<option value='${val.name}'>${val.label}</option>`
+        myselect.append(objOption);
+    });
+    // for(let i;i<initSelect.length;i++){
+    // var objOption=document.createElement('option');
+    // objOption.innerHTML=`<option value='${initSelect[i].name}'>${initSelect[i].label}</option>`
+    //     myselect.append(objOption);
+    // }
+}
+// addbtn.onclick=renderOption;
+ addbtn.addEventListener('click',renderOption)   
+ 

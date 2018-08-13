@@ -25,6 +25,18 @@
                     <li class="nav-li">关于</li>
                     <li class="nav-li">更多</li>
                     <li class="nav-li"><a href="./newPage.html">博客</a></li>
+                    <li class="nav-li style" id="style">种类
+                        <div class="hidden" id="drop_content">
+                                <!-- <select id="test"  name="">   
+                                        <option class="drop_item"   value="life">生活</option>   
+                                        <option class="drop_item"   value="health">健康</option>
+                                        <option class="drop_item"  value="study" >学习</option>  
+                                       </select> -->
+                            <h5 class="drop_item" id="life" onclick="onChangeCategroy">生活</h5>
+                            <h5 class="drop_item" id="health" onclick="onChangeCategroy">健康</h5>
+                            <h5 class="drop_item" id="study" onclick="onChangeCategroy">学习</h5>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -32,7 +44,7 @@
    <div class="main">
        <div class="blogs">
            <li id="content">
-             
+                <div id="container"></div>
            </li>
        </div>
        <div class="sidebar">
