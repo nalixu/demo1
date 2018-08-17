@@ -11,3 +11,4 @@ https://unrealyan.github.io/psdetch/打开psd文件
 http://www.kantu.com/ Ps在线编辑
 http://www.wangeditor.com/编辑器
 https://www.uisdc.com/23-blogs博客网站参考
+http://www.wangeditor.com/富文本编辑器
