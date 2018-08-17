@@ -90,25 +90,35 @@ body{
 	background-color: #fff;
 }
 .divStyle{
-	height:120px;
-	border-bottom: 1px solid #cccccc;
-	/* display: inline-block; */
+	margin-top: 1rem;
+    height: 190px;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
 }
 .blogpic{
 	overflow: hidden;
-	width: 30%;
-	display: block;
-	margin-right: 20px;
-	border-radius: 5px;
-	float: left;
+    height: 158px;
+    width: 30%;
+    display: block;
+    margin-right: 20px;
+    border-radius: 5px;
+    position: absolute;
 }
 .blogpic img{
-	width: 100%;
+	width: 240px;
+    height: 159px;
+    /* margin-top: 20px; */
+	overflow: hidden; 
 }
 .blogtitle{
-	line-height: 30px;
-	height: 30px;
-	margin: 10px 0;
+	width: 60%;
+    line-height: 30px;
+    height: 30px;
+    /* out-size: 18px; */
+    position: absolute;
+    margin-left: 262px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 a{
 	text-decoration: none;
@@ -116,18 +126,24 @@ a{
 	cursor: pointer;
 }
 .bloginfo{
-	height: 48px;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	width: 67%;
+    height: 63px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    margin-left: 264px;
+    margin-top: 70px;
 }
 .bloginfo p{
 	color: #888;
-	line-height: 24px;
+	line-height: 20px;
 	
 }
 .readmore{
 	margin-right: 10px;
-	float: right;
+    position: absolute;
+    top: 140px;
+    right: 0;
 }
 .sidebar{
 	overflow: hidden;
@@ -169,7 +185,8 @@ b{
 /* 种类选择下拉菜单 */
 .show{
 	top: 22rem;
-    left: 48rem;
+	left: 48rem;
+	margin-left: 20rem;
     width: 48px;
     height: 100px;
     position: absolute;
@@ -184,4 +201,27 @@ b{
     margin-top: -13px;
 	overflow: hidden;
 	cursor: pointer; 
+	
+}
+.dataAndStyle{
+	width: 68%;
+    line-height: 37px;
+    height: 37px;
+    position: absolute;
+    top: 28px;
+    left: 260px;
+    border: 1px solid #eeeeee;
+    border-left: 0;
+    border-right: 0;
+}
+.leftData{
+	width:40%;
+	/* margin-left: 1rem; */
+	position: absolute;
+	left: 0;
+}
+.rightStyle{
+	margin-right: 1rem;
+	position: absolute;
+	right: 0;
 }

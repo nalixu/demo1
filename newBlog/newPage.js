@@ -3,7 +3,10 @@ var title=document.getElementById('title');
 var content=document.getElementById('content');
 var submit=document.getElementById('submit');
 var resite=document.getElementById('resite');
-
+var imgSrc = ['./img/1.jpg', 'http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg', './img/3.jpg','http://seopic.699pic.com/photo/00026/7248.jpg_wh1200.jpg','http://t2.hddhhn.com/uploads/tu/201606/32/n3uuqssg2ks.jpg','http://t2.hddhhn.com/uploads/tu/201606/32/ywdfqgxr00b.jpg','http://t2.hddhhn.com/uploads/tu/201606/32/goosj3zcbj5.jpg']
+var t = Math.random() * 10 % 3; //返回0-3随机数
+t = parseInt(t);
+console.log(t)
 function getValue(){
 var current=new Date();
 var createTime=current.getFullYear()+'-'+(current.getMonth+1<10?'0'+(current.getMonth()+1):current.getMonth()+1)+'-'+current.getDate();
@@ -11,7 +14,8 @@ var createTime=current.getFullYear()+'-'+(current.getMonth+1<10?'0'+(current.get
         title:title.value,
         content:content.value,
         createTime:createTime,
-        style:myselect.options[myselect.selectedIndex].text
+        style:myselect.options[myselect.selectedIndex].text,
+        image:imgSrc[t]
     }
     initData.push(record);
 }
