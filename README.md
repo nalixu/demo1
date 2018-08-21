@@ -13,6 +13,7 @@
             if (deviceWidth > 750) deviceWidth = 750;
             document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
         })()</script>
+
 链接：https://tinypng.com/ 图片压缩
 https://unrealyan.github.io/psdetch/ 打开psd文件
 http://www.kantu.com/ Ps在线编辑
