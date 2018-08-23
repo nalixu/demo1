@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>edit</title>
+</head>
+<body>
+  <div id="editor">
+  </div>
+  <button id="btn1">获取text</button>
+  <p id="text"></p>
+  <script src="./wangEditor.min.js"></script>
+  <script type="text/javascript">
+  var e=window.wangEditor;
+  var editor=new e('#editor');
+  editor.customConfig.menus=[
+    'head',
+    'bold',
+    'fontSize',
+    'fontName',
+    'italic',
+    'foreColor',
+    'backColor',
+    'link',
+    'justify',
+    'image',
+    'emoticon',
+    'table',
+    'code',
+    'undo',
+    'redo'
+];
+editor.customConfig.colors=[
+        '#000000',
+        '#eeece0',
+        '#1c487f',
+        '#4d80bf',
+        '#c24f4a',
+        '#8baa4a',
+        '#7b5ba1',
+        '#46acc8',
+        '#f9963b',
+        '#ffffff'
+];
+editor.customConfig.fontNames=[
+        '宋体',
+        '微软雅黑',
+        'Arial',
+        'Tahoma',
+        'Verdana'
+];
+editor.customConfig.uploadImgServer = '/upload'  // 上传图片到服务器
+
+  editor.create();
+
+  // document.getElementById('btn1').onclick=function(){
+  //    var text=document.getElementById('text');
+
+  //   text.innerHTML=editor.txt.html();
+   
+  // }
+
+var editData=localStorage.edit?JSON.parse(localStorage.edit):[];
+function getValue(){
+  var record=editor.txt.html();
+editData.push(record);
+localStorage.edit=JSON.stringify(editData);
+}
+
+
+
+var btn1=document.getElementById('btn1');
+btn1.onclick=function(){
+  getValue()
+  window.open("second.html");
+}
+
+</script>
+<!-- <script src="./index.js"></script> -->
+</body>
+</html>

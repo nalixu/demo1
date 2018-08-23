@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding:0;
+}
+ul,li{
+    list-style-type: none;
+}
+body{
+    background-color:#86B4CC;
+    font-size:1.2rem;
+    color:#787878;
+    font-weight: 500;
+    font-family: 'Open Sans',sans-serif;
+    display: flex;
+}
+.main{
+    width:26%;
+    margin: 14rem auto 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    width:100%;
+    position: relative;
+}
+.user p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.regist{
+    padding: 2rem 0;
+    margin-top: 0.5rem;
+}
+.inset{
+    background: #fff;
+    border-radius: 5px;
+    padding: 3rem 3rem;
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    display: flex;
+    flex-direction: column;
+}
+span label{
+    line-height: 26px;
+    margin-bottom: 0.7rem;
+}
+span input{
+    text-align: start;
+    font: 400 13.3333px Arial;
+    line-height: 32px;
+    margin-bottom: 0.6rem;
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    line-height: 40px;
+    justify-content:space-between;
+}
+.submit{
+    width: 100px;
+    height: 35px;
+    margin: 0 auto;
+}
+.submit input{
+    width: 85px;
+    height: 35px;
+    background: rgb(240,107,55);
+    color: #fff;
+    border: 0;
+    border-radius: 40px;
+    font-weight: 500;
+
+}
+.password{
+    font-size: 1rem;
+}

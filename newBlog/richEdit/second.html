@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+            <p id="article"></p>
+    </div>
+   
+    <script>
+        var editData=localStorage.edit?JSON.parse(localStorage.edit):[];
+        var container=document.getElementById('container');
+     
+    //   editData.forEach(val => {
+    //     var article=document.getElementById('article');
+    //       article.innerHTML=val;
+    //       container.append(article);
+    //   });
+      for(let i=0;i<editData.length;i++){
+        var article=document.getElementById('article');
+          article.innerHTML=editData[i];
+          container.append(article);
+      }
+        
+        
+</script>
+</body>
+</html>
