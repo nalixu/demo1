@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>写博客</title>
+    <link rel="stylesheet" type="text/css" href="./css/edit.css">
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+    <script>
+        (function () {
+            var deviceWidth = document.documentElement.clientWidth;
+            if (deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        })()
+
+</script>
+</head>
+<body>
+    <div class="head">
+        <div class="nav">
+            <li class="category" id="category">
+                <a>
+                    <i class="iconfont icon-Shapecopy"></i>
+                    <span>类别</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    最新
+                </a>
+            </li>
+            <li>
+                <a>
+                    写博客
+                </a>
+            </li>
+        </div>
+        <div class="blogger">
+            <a>nalixu</a>
+        </div>
+        <div class="search">
+            <a>
+                <i class="iconfont icon-fenxiang"></i>
+
+            </a>
+            <a>
+                <i class="iconfont icon-weibiaoti-_huabanfuben"></i>
+            </a>
+        </div>
+    </div>
+    <input type="text" placeholder="请输入标题" class="editTitle">
+    <div id="editor" style="width: 96%;margin: 0.3rem auto"></div>
+    <input type="button" value="发布" class="submit" />
+<p class="editContent"></p>
+<script src="./js/wangEditor.min.js"></script>
+<script type="text/javascript">
+    var e=window.wangEditor;
+    var editor=new e('#editor');
+    editor.customConfig.uploadImgShowBase64 = true;
+    editor.create();
+</script>
+<script src="./js/edit.js"></script>
+
+</body>
+</html>

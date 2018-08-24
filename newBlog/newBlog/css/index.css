@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #3260B1;
+}
+body{
+    background: #fff;
+    font-size: 0.14rem;
+}
+h1{
+    font-family: "Work Sans",sans-serif;
+    font-weight: 8rem;
+    font-size: 0.52rem;
+}
+p{
+    font-family: proxima-nova,sans-serif;
+    font-size: 0.2rem;
+}
+.head{
+    font-family: "Work Sans",sans-serif;
+    font-weight: 550;
+    font-size: 0.18rem;
+    top: 0;
+    color: #292f38;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.13);
+    height: 0.6rem;
+}
+.nav{
+    width: 30%;
+    display:inline-block;
+    margin: auto 0.4rem;
+    text-align: left;
+    line-height: 0.6rem;
+    cursor: pointer;
+}
+.nav li{
+    display: inline-block;
+    margin-right: 0.3rem;
+}
+.nav li a i{
+    
+    padding-right: 0.03rem;
+}
+.icon-Shapecopy:before{
+    font-size: 0.01rem;
+}
+.blogger{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.6rem;
+}
+.search{
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    right: 0.4rem;
+    line-height: 0.6rem;
+    cursor: pointer;
+}
+.search i{
+    font-size: 0.2rem;
+    margin-right: 0.2rem;
+}
+.subnav{
+    font-size: 0.16rem;
+    font-weight: 500;
+    width:1.5rem;
+    box-shadow: 
+    0 15px 25px 2px rgba(0, 0, 0, 0.15),
+    0 5px 30px 5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -5px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    position: absolute;
+}
+.subnav li{
+    padding: 0.18rem 0.25rem;
+    box-shadow: 0 1px 0 #ECEFF3 inset;
+    cursor:pointer;
+}
+.categoriesHidden{
+    display: none;
+}
+.main{
+    width: 84%;
+    margin: 0 auto;
+ 
+}
+.container{
+    width: 10rem;
+ 
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.13);
+}
+.article{
+    padding-top: 0.3rem;
+    width: 100%;
+    display: flex;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #ECEFF3;
+}
+.image{
+    width: 2.2rem;
+    height: 1.5rem; 
+
+}
+.image img{
+    width: 100%;
+    height:100%;
+}
+.content{
+    width: 74%;
+    margin-left: 0.3rem;
+}
+.titile{
+    width:94%;
+    height: 0.34rem;
+    overflow: hidden;
+    text-align: left;
+}
+.titile p{
+    font-size: 0.2rem;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 0.18rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    font-weight: 550;
+    cursor: pointer;
+}
+.titile p a .authorName .type a:hover{
+    color:#3260B1;
+  
+}
+.note{
+    font-size: 0.12rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    cursor: pointer;
+    border-top: 1px solid #ECEFF3;
+    border-bottom: 1px solid #ECEFF3;
+}
+.type{
+    margin-left: 3.6rem;
+}
+.contentText{
+    padding-top: 0.07rem;
+    height: 0.7rem;
+}
+.contentText p{
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: 0.15rem;
+    line-height: 0.25rem;
+}

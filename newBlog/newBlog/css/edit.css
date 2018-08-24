@@ -70,52 +70,18 @@ p{
     font-size: 0.2rem;
     margin-right: 0.2rem;
 }
-.subnav{
-    font-size: 0.16rem;
-    font-weight: 500;
-    width:1.5rem;
-    box-shadow: 
-    0 15px 25px 2px rgba(0, 0, 0, 0.15),
-    0 5px 30px 5px rgba(0, 0, 0, 0.1),
-    0 8px 10px -5px rgba(0, 0, 0, 0.25);
-    z-index: 20;
+.editTitle{
+    width: 96%;
+    height: 0.3rem;
+    margin: 0.1rem auto 0.1rem;
+    display: block;
 }
-.subnav li{
-    padding: 0.18rem 0.25rem;
-    box-shadow: 0 1px 0 #ECEFF3 inset;
-}
-.categoriesHidden{
-    display: none;
-}
-.main{
-    width: 90%;
-    margin: 0.3rem auto;
-}
-.container{
-    width: 85%;
-
-}
-.article{
-    width: 100%;
-    /* display: flex; */
-}
-.image{
-    width: 15%;    
-    display: inline-block;
-}
-.image img{
-    width: 100%;
-    height: 2.4rem;
-}
-.content{
-    width: 80%;
-    display: inline-block;
- 
-}
-.titile{
-    font-size: 0.3rem;
-    overflow: hidden;
-}
-.note .contentText{
-    font-size: 0.2rem;
+.submit{
+    width: 0.7rem;
+    height: 0.35rem;
+    margin-left: 0.42rem;
+    background: rgba(0, 0, 0, 0.03);
+    border: none;
+    color: rgba(0,0,0,0.7);
+    font-weight: bold;
 }
