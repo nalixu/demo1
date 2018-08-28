@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<script>
+		 (function () {
+            var deviceWidth = document.documentElement.clientWidth;
+            if (deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        })()
+
+	</script>
+</head>
+<body>
+	<div class="loginContainer">
+		<div class="head">登录</div>
+		<div class="box"><input type="text" name="email" placeholder="Email地址"></div>
+		<div class="box"><input type="text" name="password" placeholder="密码"></div>
+		<div class="submit"><input type="button" name="submit" value="登录"></div>
+		<div class="note">还没有博客账号？<a>点我注册</a></div>
+	</div>
+<script type="text/javascript" src="./js/login.js"></script>
+</body>
+</html>

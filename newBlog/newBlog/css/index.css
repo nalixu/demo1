@@ -165,6 +165,8 @@ p{
 }
 .contentText{
     padding-top: 0.07rem;
+    overflow: hidden;
+    height: 120px;
 }
 .contentText p{
     width: 95%;

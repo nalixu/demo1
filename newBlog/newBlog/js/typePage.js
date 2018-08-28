@@ -16,7 +16,7 @@ function getQueryString(name){
     }
 }
 let type=getQueryString('type');
-let articleList=data.find(item=>item.type==type);
+
 function render(data){
     var container=document.querySelector('.container');
     document.querySelector('.list').remove();
@@ -46,5 +46,6 @@ function render(data){
    
 }
 
-render(data)
-render(articleList);
+render(data);
+// let articleList=data.find(item=>item.type==type);
+// render(articleList);
