@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>写博客</title>
-    <link rel="stylesheet" type="text/css" href="./css/edit.css">
+    <link rel="stylesheet" type="text/css" href="./css/newPage.css">
     <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
     <script>
         (function () {
@@ -51,6 +51,17 @@
     </div>
     <input type="text" placeholder="请输入标题" class="editTitle">
     <div id="editor" style="width: 96%;margin: 0.3rem auto"></div>
+    <div class="selectbtn">
+        <label for="myselect">种类:</label>
+        <select name="" id="myselect" class="myselect">
+            <option value="life">生活</option>
+            <option value="health">健康</option>
+            <option value="study">学习</option>
+        </select>
+        <input type="text" value="" name="mytext" id="mytext" class="mytext" />
+        <button value="add" id="addbtn" name="addbtn" class="addbtn">add</button>
+       
+    </div>
     <input type="button" value="发布" class="submit" />
 <p class="editContent"></p>
 <script src="./js/wangEditor.min.js"></script>
@@ -60,7 +71,7 @@
     editor.customConfig.uploadImgShowBase64 = true;
     editor.create();
 </script>
-<script src="./js/edit.js"></script>
+<script src="./js/newPage.js"></script>
 
 </body>
 </html>

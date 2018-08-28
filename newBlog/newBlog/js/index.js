@@ -15,33 +15,40 @@ document.addEventListener('click',function(){
 },false);
 // 列表部分
 var data=localStorage.data?JSON.parse(localStorage.data):[];
-function render(){
-    var main=document.querySelector('main');
+function render(data){
     var container=document.querySelector('.container');
-    container.remove();
-    var articleContainer=document.createElement('div');
-    articleContainer.className="container";
-    data.forEach((val,key) => {
-        var article=document.createElement('div');
-        article.className="article";
-        article.innerHTML=`
-        <div class="image">
-            <img src="./img/111.jpg" alt="1">
+    var article=document.querySelector('.article');
+   document.getElementById('blog').remove();
+   var blog=document.createElement('blog');
+   blog.id='blog';
+    data.forEach((val,key)=>{     
+        var blogText=document.createElement('div');
+        blogText.className='blogText';
+        blogText.innerHTML=` <div class="image">
+        <img src="${val.image}" alt="1">
+    </div>
+    <div class="content">
+        <div class="titile"><p><a href='detail.html?id=${key}'>${val.title}</a></p></div>
+        <div class="note">
+            <span class="author">By <a class="authorName">ENDA STOKES BARRON</a></span>
+            <span class="date">${val.createTime}</span>
+            <span class="type"><a>${val.type}</a></span>
         </div>
-        <div class="content">
-            <div class="titile"><p title="Sources of Free High-Definition Stock Videoddddddddddddddssssdddssssss"><a> Sources of Free High-Definition Stock Videoddddddddddddddssssdddsssssssd</a></p></div>
-            <div class="note">
-                <span class="author">By <a class="authorName">ENDA STOKES BARRON</a></span>
-                <span class="date"> AUGUST 23RD, 2018</span>
-                <span class="type"><a>FREEBIES</a></span>
-            </div>
-            <div class="contentText">
-                <p>pStock footage: You can use it in your projects, 
-                video backgrounds, or even in the header to welcome people to your website
-                 – among other uses. The problem? Video production2222222222222222222222222222222222222222ddddddddddddddsssssssssddddddddddsdsd
-                 </p>
-            </div>
+        <div class="contentText">
+            ${val.content}
         </div>
-    `
-    });
+    </div>`
+    blog.append(blogText)
+    })
+    article.append(blog);
+}
+render(data);
+function onChangeCategory(e){
+    let value=e.target.innerHTML;
+    let list=data.filter(item=>item.type===value);
+    render(list);
+}
+let li=document.getElementsByTagName('li');
+for(let i=0;i<li.length;i++){
+    li[i].addEventListener('click',onChangeCategory)
 }

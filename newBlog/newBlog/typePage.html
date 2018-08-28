@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>同类别列表</title>
+    <link rel="stylesheet" href="./css/typePage.css">
+    <script>
+        (function () {
+            var deviceWidth = document.documentElement.clientWidth;
+            if (deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        })()
+    </script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="nav">
+            <div class="navLeft">
+                <a>
+                    <i class="iconfont icon-Shapecopy"></i>
+                    <span>类别</span>
+                </a>
+                <a>
+                    写博客
+                </a>
+            </div>
+            <div class="navCenter">
+                <span></span>
+            </div>
+            <div class="navRight">
+                <span clss=''></span>
+            </div>
+        </div>
+        <div class="searchBox"></div>
+    </div>
+    <div class="list"></div>
+    <script src="./js/typePage.js"></script>
+</body>
+
+</html>
