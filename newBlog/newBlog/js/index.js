@@ -32,7 +32,7 @@ function render(data){
         <div class="note">
             <span class="author">By <a class="authorName">ENDA STOKES BARRON</a></span>
             <span class="date">${val.createTime}</span>
-            <span class="type"><a>${val.type}</a></span>
+            <span class="type"><a href="typePage.html">${val.type}</a></span>
         </div>
         <div class="contentText">
             ${val.content}
