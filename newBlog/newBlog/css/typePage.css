@@ -88,7 +88,8 @@ a:hover{
     height: 280px;
     display:flex;
     justify-content:center;
-    padding-bottom: 0.7rem;
+    padding-bottom: 0.2rem;
+    margin-bottom:0.4rem;
     border-bottom:1px solid #f5f7f9;
 }
 .article img{

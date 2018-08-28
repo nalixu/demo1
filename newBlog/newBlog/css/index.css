@@ -6,10 +6,12 @@ ul,li{
     list-style-type: none;
 }
 a{
+    color: #292f38;
     text-decoration: none;
 }
 a:hover{
-    color: #3260B1;
+    color: #658dbd;
+    cursor:pointer;
 }
 body{
     background: #fff;
@@ -125,7 +127,9 @@ p{
 }
 .content{
     width: 74%;
+    height: 1.5rem;
     margin-left: 0.3rem;
+    overflow: hidden;
 }
 .titile{
     width:94%;
@@ -161,11 +165,9 @@ p{
 }
 .contentText{
     padding-top: 0.07rem;
-    height: 0.7rem;
 }
 .contentText p{
     width: 95%;
-    height: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
