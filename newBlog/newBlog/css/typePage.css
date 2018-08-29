@@ -107,11 +107,13 @@ a:hover{
     width:100%;
     font-size: 0.28rem;
     font-weight:bold;
-    line-height: 0.6rem;
+    /*line-height: 0.6rem;*/
     text-align: left;
+    padding-bottom: 0.1rem;
 }
 .articleNote{
     width:100%;
+    height: 0.9rem;
     display:flex;
     justify-content:space-between;
     line-height:0.27rem;
@@ -129,6 +131,20 @@ a:hover{
     width:10%;
     text-align: left;
 }
+/*.articleText{
+    padding-top: 0.07rem;
+    overflow: hidden;
+}
+.articleText p{
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: 0.15rem;
+    line-height: 0.25rem;
+ 
+}
+*/
 .articleText{
     width: 90%;
     line-height: 0.27rem;
@@ -138,3 +154,17 @@ a:hover{
     color: #3a3c3b;
     overflow: hidden;
 }
+/*.fade{
+    position: relative;
+    height: 3.6rem;
+}
+.fade:after{
+    content:'';
+    text-align: right;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 70%;
+    height: 1.2rem;
+    background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1) 50%);
+}*/

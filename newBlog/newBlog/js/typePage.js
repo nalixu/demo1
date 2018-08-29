@@ -23,13 +23,13 @@ function render(data){
     var list=document.createElement('div');
     list.className='list';
     
-    data.forEach(val=>{
+    data.forEach((val,key)=>{
         var article=document.createElement('div');
         article.className='article';
         article.innerHTML=`
         <img src="${val.image}" alt="1" />
         <div class="articleContent">
-            <div class="title"><a>${val.title}</a></div>
+            <div class="title"><a href='detail.html?id=${key}'>${val.title}</a></div>
             <div class="articleNote">
                 <div class="noteLeft">By<a>REIC KARKOVACK</a>${val.createTime}</div>
                 <div class="noteRight"><a>${val.type}</a></div>

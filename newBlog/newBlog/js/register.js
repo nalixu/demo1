@@ -12,5 +12,7 @@ function saveData(){
     initData.push(record);
     localStorage.user=JSON.stringify(initData);
     alert('注册成功');
+    window.open('login.html');
+    window.close()
 }
 submit.onclick=saveData;

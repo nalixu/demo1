@@ -29,7 +29,7 @@ submit.onclick=jump;
 function checkSomething(){
     if(!sessionStorage.email){
         window.open('login.html')
-        window.close();
+        window.close()
     }
 }
 if(document.readyState==='loading'){
@@ -48,9 +48,17 @@ function getSelectValue(){
     localStorage.selectData=JSON.stringify(initSelect);
     mytext.value='';
 }
-
-function renderOption(){
+function readData(){
     getSelectValue();
+    for(var i;i<initSelect.length;i++){
+        var objOption=document.createElement('option');
+        objOption.text=initSelect[i].label;
+        objOption.value=initSelect[i].name;
+        myselect.options.add(objOption);
+    }
+}
+function renderOption(){
+    readData()
     initSelect.forEach(val => {
         var objOption=document.createElement('option');
         objOption.innerHTML=`<option value='${val.name}'>${val.label}</option>`
