@@ -27,8 +27,9 @@ function jump(){
 }
 submit.onclick=jump;
 function checkSomething(){
-    if(!sessionStorage.emai){
+    if(!sessionStorage.email){
         window.open('login.html')
+        window.close();
     }
 }
 if(document.readyState==='loading'){
@@ -36,6 +37,7 @@ if(document.readyState==='loading'){
 }else{
     checkSomething();
 }
+
 //select
 var initSelect=localStorage.selectData?JSON.parse(localStorage.selectData):[]
 var myselect=document.getElementById('myselect');

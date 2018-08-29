@@ -34,7 +34,7 @@ function render(data){
             <span class="date">${val.createTime}</span>
             <span class="type"><a href="typePage.html?type=${val.type}">${val.type}</a></span>
         </div>
-        <div class="contentText">
+        <div class="contentText fade">
             ${val.content}
         </div>
     </div>`
@@ -55,8 +55,16 @@ for(let i=0;i<li.length;i++){
 }
 function checkSomething(){
     if(sessionStorage.email){
-        var userImg=document.getElementById('userImg');
-        userImg.innerHTML='欢迎'+sessionStorage.email;
+        var loginUser=document.querySelector('.loginUser');
+        loginUser.innerHTML=`
+        <small>欢迎${sessionStorage.email}</small>
+        <small onclick="loginout()">注销</small>
+        `
     }
 }
 checkSomething()
+function loginout(){
+    window.open('login.html');
+    sessionStorage.clear();
+    window.close();
+}

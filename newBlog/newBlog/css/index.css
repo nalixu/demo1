@@ -161,18 +161,32 @@ p{
     border-bottom: 1px solid #ECEFF3;
 }
 .type{
-    margin-left: 3.6rem;
+    margin-left: 4rem;
 }
 .contentText{
     padding-top: 0.07rem;
     overflow: hidden;
-    height: 120px;
+    /* height: 120px; */
 }
 .contentText p{
-    width: 95%;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
     font-size: 0.15rem;
     line-height: 0.25rem;
+}
+.fade{
+    position: relative;
+    height: 3.6rem;
+}
+.fade:after{
+    content:'';
+    text-align: right;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 70%;
+    height: 1.2rem;
+    background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1) 50%);
 }
