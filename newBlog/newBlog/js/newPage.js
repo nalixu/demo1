@@ -26,6 +26,16 @@ function jump(){
     window.close();
 }
 submit.onclick=jump;
+function checkSomething(){
+    if(!sessionStorage.emai){
+        window.open('login.html')
+    }
+}
+if(document.readyState==='loading'){
+    document.addEventListener("DOMContentLoaded",checkSomething)
+}else{
+    checkSomething();
+}
 //select
 var initSelect=localStorage.selectData?JSON.parse(localStorage.selectData):[]
 var myselect=document.getElementById('myselect');

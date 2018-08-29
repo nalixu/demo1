@@ -1,5 +1,5 @@
-var data=localStorage.data?JSON.parse(localStorage.data):[];
-
+// var data=localStorage.data?JSON.parse(localStorage.data):[];
+var data=JSON.parse(localStorage.data);
 function getQueryString(name){
     var str=location.search.substring(1);
     var arr=str.split('&');
@@ -16,7 +16,7 @@ function getQueryString(name){
     }
 }
 let type=getQueryString('type');
-
+let type1=decodeURI(type);
 function render(data){
     var container=document.querySelector('.container');
     document.querySelector('.list').remove();
@@ -46,6 +46,8 @@ function render(data){
    
 }
 
-render(data);
-// let articleList=data.find(item=>item.type==type);
-// render(articleList);
+// render(data);
+
+
+let articleList=data.filter(item=>item.type==type1);
+render(articleList);

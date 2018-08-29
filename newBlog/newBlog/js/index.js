@@ -52,3 +52,10 @@ let li=document.getElementsByTagName('li');
 for(let i=0;i<li.length;i++){
     li[i].addEventListener('click',onChangeCategory)
 }
+function checkSomething(){
+    if(sessionStorage.email){
+        var userImg=document.getElementById('userImg');
+        userImg.innerHTML='欢迎'+sessionStorage.email;
+    }
+}
+checkSomething()
