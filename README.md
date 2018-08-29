@@ -25,3 +25,4 @@ http://www.kantu.com/ Ps在线编辑
 http://www.wangeditor.com/ 编辑器
 https://www.uisdc.com/23-blogs 博客网站参考
 http://www.wangeditor.com/ 富文本编辑器
+https://css-tricks.com/line-clampin/ 多行文字超出部分隐藏
