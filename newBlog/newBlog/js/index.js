@@ -18,7 +18,6 @@ document.addEventListener('click',function(){
 
 function render(data){
     var container=document.querySelector('.container');
-    // var article=document.querySelector('.article');
    document.getElementById('blog').remove();
    var blog=document.createElement('blog');
    blog.id='blog';
