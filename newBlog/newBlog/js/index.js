@@ -1,3 +1,4 @@
+var data=localStorage.data?JSON.parse(localStorage.data):[];
 var categoriesHidden=document.getElementById('categoriesHidden');
 var category=document.getElementById('category');
 // 鼠标点击探出菜单阻止冒泡
@@ -14,10 +15,10 @@ document.addEventListener('click',function(){
     categoriesHidden.className='categoriesHidden';
 },false);
 // 列表部分
-var data=localStorage.data?JSON.parse(localStorage.data):[];
+
 function render(data){
     var container=document.querySelector('.container');
-    var article=document.querySelector('.article');
+    // var article=document.querySelector('.article');
    document.getElementById('blog').remove();
    var blog=document.createElement('blog');
    blog.id='blog';
@@ -40,9 +41,10 @@ function render(data){
     </div>`
     blog.append(blogText)
     })
-    article.append(blog);
+    container.append(blog);
 }
 render(data);
+//nav sublist
 function onChangeCategory(e){
     let value=e.target.innerHTML;
     let list=data.filter(item=>item.type===value);
