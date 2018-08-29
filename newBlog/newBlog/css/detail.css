@@ -2,8 +2,31 @@
     margin: 0;
     padding:0
 }
-
+.head{
+    width: 100%;
+    height: 14rem;
+    background: #3260b1;
+}
 .con{
     width: 80%;
     margin: 0 auto;
+    border: 1px solid #eee;
+}
+.title{
+    width: 100%;
+    line-height: 4.9rem;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+.con p{
+    width: 96%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 2.3rem;
+    text-align: left;
+}
+.con img{
+    width: 100%;
+    overflow: hidden;
 }

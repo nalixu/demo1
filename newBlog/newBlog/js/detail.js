@@ -18,9 +18,8 @@ let id=getQueryString('id')
 function render(article,key){
     var con=document.querySelector('.con');
     con.innerHTML=`
-    <div class="content">
-    ${article.content}
-    </div>
+        <div class="title">${data[id].title}</div>
+        <div>${data[id].content}</div>
     `
 }
 render(data[id],id);
