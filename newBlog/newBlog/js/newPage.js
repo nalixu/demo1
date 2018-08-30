@@ -42,27 +42,29 @@ if(document.readyState==='loading'){
 var initSelect=localStorage.selectData?JSON.parse(localStorage.selectData):[]
 var myselect=document.getElementById('myselect');
 var addbtn=document.getElementById('addbtn');
+
 function getSelectValue(){
     var mytext=document.getElementById('mytext');
+    var mytextValue = mytext.value;
+    for(var i=0;i<initSelect.length;i++ ) {
+        if(mytextValue === initSelect[i].label)　{
+            alert('不能输入重复的内容');
+            mytext.value='';
+            return false;
+        }
+    }
     initSelect.push({id:initSelect.length,name:mytext.value,label:mytext.value})
     localStorage.selectData=JSON.stringify(initSelect);
     mytext.value='';
 }
-function readData(){
-    getSelectValue();
-    for(var i;i<initSelect.length;i++){
-        var objOption=document.createElement('option');
-        objOption.text=initSelect[i].label;
-        objOption.value=initSelect[i].name;
-        myselect.options.add(objOption);
-    }
-}
+
 function renderOption(){
-    readData()
+    getSelectValue();
+    var optionStr = '<option value="life">生活</option><option value="health">健康</option><option value="study">学习</option>';
     initSelect.forEach(val => {
-        var objOption=document.createElement('option');
-        objOption.innerHTML=`<option value='${val.name}'>${val.label}</option>`
-        myselect.append(objOption);
+        optionStr += '<option value="' + val.name + '">' + val.label + '</option>'
     });
+    myselect.innerHTML = optionStr;
 }
+
 addbtn.addEventListener('click',renderOption);

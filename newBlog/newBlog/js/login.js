@@ -2,7 +2,7 @@
 var email=document.getElementById('email');
 var password=document.getElementById('password');
 var submit=document.getElementById('submit');
-var initData=JSON.parse(localStorage.user);
+var initData=localStorage.user?JSON.parse(localStorage.user):[];
 submit.onclick=function(){
     
 let u=initData.find(item=>item.email===email.value);

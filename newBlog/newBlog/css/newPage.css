@@ -7,6 +7,7 @@ ul,li{
 }
 a{
     text-decoration: none;
+    color: #292f38;
 }
 a:hover{
     color: #3260B1;
@@ -84,4 +85,13 @@ p{
     border: none;
     color: rgba(0,0,0,0.7);
     font-weight: bold;
+    margin-top: 0.15rem;
+}
+.selectbtn{
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+}
+.mytext{
+    margin-left: 0.07rem;
 }

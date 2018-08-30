@@ -1,6 +1,9 @@
 var data=localStorage.data?JSON.parse(localStorage.data):[];
+var subnavData=JSON.parse(localStorage.selectData);
 var categoriesHidden=document.getElementById('categoriesHidden');
 var category=document.getElementById('category');
+var blogger=document.querySelector('blogger');
+
 // 鼠标点击探出菜单阻止冒泡
 category.addEventListener('click',function(e){
     categoriesHidden.className="subnav";
@@ -11,11 +14,27 @@ categoriesHidden.addEventListener('click',function(e){
     e.stopPropagation();
 },false);
 // 鼠标点击其他地方隐藏
+// document.addEventListener('click',function(){
+//     categoriesHidden.className='categoriesHidden';
+// },false);
+
 document.addEventListener('click',function(){
     categoriesHidden.className='categoriesHidden';
-},false);
+})
+function renderSubnav(){
+    // document.getElementById('categoryList').remove();
+    // var categoryList=document.createElement('ul');
+    // categoryList.id='categoryList';
+    var categoryList=document.getElementById('categoryList');
+    subnavData.forEach(val=>{
+        var categoryLi=document.createElement('li');
+        categoryLi.innerHTML=`<a>${val.label}</a>`
+        categoryList.append(categoryLi);
+    })
+    categoriesHidden.append(categoryList);
+}
+renderSubnav();
 // 列表部分
-
 function render(data){
     var container=document.querySelector('.container');
    document.getElementById('blog').remove();
@@ -53,6 +72,7 @@ let li=document.getElementsByTagName('li');
 for(let i=0;i<li.length;i++){
     li[i].addEventListener('click',onChangeCategory)
 }
+
 function checkSomething(){
     if(sessionStorage.email){
         var loginUser=document.querySelector('.loginUser');
