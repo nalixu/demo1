@@ -1,5 +1,5 @@
 var data=localStorage.data?JSON.parse(localStorage.data):[];
-var subnavData=JSON.parse(localStorage.selectData);
+var subnavData=localStorage.selectData?JSON.parse(localStorage.selectData):[];
 var categoriesHidden=document.getElementById('categoriesHidden');
 var category=document.getElementById('category');
 var blogger=document.querySelector('blogger');
@@ -67,7 +67,7 @@ let li=document.getElementsByTagName('li');
 for(let i=0;i<li.length;i++){
     li[i].addEventListener('click',onChangeCategory)
 }
-
+//cancellation sessionStorage
 function checkSomething(){
     if(sessionStorage.email){
         var loginUser=document.querySelector('.loginUser');
@@ -83,3 +83,17 @@ function loginout(){
     sessionStorage.clear();
     window.close();
 }
+//sort by compare date
+function compare(property){
+    return function(obj1,obj2){
+        var value1=obj1[property];
+        var value2=obj2[property];
+        return 1;
+    }
+}
+var sortObj=data.sort(compare('createTime'));
+var newList=document.querySelector('.new');
+newList.addEventListener('click',function(){
+    render(sortObj);
+})
+

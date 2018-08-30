@@ -6,7 +6,7 @@ var t=Math.random()*10%7;
 t=parseInt(t);
 function getValue(){
     var current=new Date();
-    var createTime=current.getFullYear()+'-'+(current.getMonth+1<10?'0'+(current.getMonth()+1):current.getMonth()+1)+'-'+current.getDate()
+    var createTime=current.getFullYear()+'-'+(current.getMonth+1<10?'0'+(current.getMonth()+1):current.getMonth()+1)+'-'+current.getDate()+' '+current.getHours()+':'+current.getMinutes()+':'+current.getSeconds();
     
     var record={
         title:title.value,
@@ -29,7 +29,7 @@ submit.onclick=jump;
 function checkSomething(){
     if(!sessionStorage.email){
         window.open('login.html')
-        window.close()
+        window.close();
     }
 }
 if(document.readyState==='loading'){
