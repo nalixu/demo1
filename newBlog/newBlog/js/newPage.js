@@ -32,7 +32,7 @@ submit.onclick = jump;
 function checkSomething() {
     if (!sessionStorage.email) {
         window.open('login.html');
-        window.location.href="about:blank";
+       
         window.close();
     }
 }

@@ -1,5 +1,8 @@
-var inputType=document.getElementsByTagName('input');
+var inputType=document.querySelector('.inputType')
 var data=localStorage.data?JSON.parse(localStorage.data):[];
-if(event.key==="Enter"){
-    
+function getVal() {
+	if(event.key==="Enter"){
+		window.open('typePage.html?type='+inputType.value);
+		window.close();
+	}
 }
