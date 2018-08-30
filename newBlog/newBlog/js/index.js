@@ -14,17 +14,12 @@ categoriesHidden.addEventListener('click',function(e){
     e.stopPropagation();
 },false);
 // 鼠标点击其他地方隐藏
-// document.addEventListener('click',function(){
-//     categoriesHidden.className='categoriesHidden';
-// },false);
 
 document.addEventListener('click',function(){
     categoriesHidden.className='categoriesHidden';
 })
 function renderSubnav(){
-    // document.getElementById('categoryList').remove();
-    // var categoryList=document.createElement('ul');
-    // categoryList.id='categoryList';
+ 
     var categoryList=document.getElementById('categoryList');
     subnavData.forEach(val=>{
         var categoryLi=document.createElement('li');
