@@ -18,7 +18,8 @@
 2）前端：在页头上，如果用户未登录，显示“登录”、“注销”的信息；如果用户已登录显示“welcome xxx”、“注销”的信息。在商品页面，点击加入购物车按钮时，如果用户未登录，跳转到登录页面；如果用户已登录，将商品添加到购物车。
 实现注销原理：从session中将uid删除
 9、搜索 https://www.imooc.com/video/262
-
+10、git log 
+git differ
 链接：https://tinypng.com/ 图片压缩
 https://unrealyan.github.io/psdetch/ 打开psd文件
 http://www.kantu.com/ Ps在线编辑
