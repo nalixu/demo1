@@ -1,4 +1,6 @@
 // var data=localStorage.data?JSON.parse(localStorage.data):[];
+var searchBox=document.querySelector('.searchBox');
+
 var data=JSON.parse(localStorage.data);
 function getQueryString(name){
     var str=location.search.substring(1);
@@ -39,11 +41,17 @@ function render(data){
             </div>
         </div>
         `
+
         list.append(article);
         
     })
    container.append(list);
-   
+   for(var i=0;i<data.length;i++){
+       let searchstr=data[i].title;
+       if(searchstr===searchBox.value){
+           
+       }
+   }
 }
 
 // render(data);

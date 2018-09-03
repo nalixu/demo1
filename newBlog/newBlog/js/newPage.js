@@ -31,9 +31,10 @@ submit.onclick = jump;
 // checkout login
 function checkSomething() {
     if (!sessionStorage.email) {
-        window.open('login.html');
-        window.location.href="about:blank";
-        window.close();
+        // window.open('login.html');
+       
+        // window.close();
+        location.href="F:/project/demo1/newBlog/newBlog/login.html";
     }
 }
 if (document.readyState === 'loading') {

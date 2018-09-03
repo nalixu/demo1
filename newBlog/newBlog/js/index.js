@@ -96,4 +96,16 @@ var newList=document.querySelector('.new');
 newList.addEventListener('click',function(){
     render(sortObj);
 })
+//点击跳转写博客
+var editBlog=document.querySelector('.editBlog');
+
+
+editBlog.addEventListener('click',function(){
+    if(sessionStorage.email){
+       location.href='F:/project/demo1/newBlog/newBlog/newPage1.html'
+    }else{
+        location.href="F:/project/demo1/newBlog/newBlog/login.html";
+    }
+
+})
 

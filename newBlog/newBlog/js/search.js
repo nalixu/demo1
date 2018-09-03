@@ -1,8 +1,7 @@
-var inputType=document.getElementsByTagName('input');
-var data=localStorage.data?JSON.parse(localStorage.data):[];
-function getVal(){
-if(document.onkeydown==="Enter"){
-    window.open('typePage.html?type='+inputType.value);
+var inputType=document.querySelector('.inputType')
+function getVal() {
+	if(event.key==="Enter"){
+		window.open('typePage.html?type='+inputType.value);
+		window.close();
+	}
 }
-}
-getVal()
